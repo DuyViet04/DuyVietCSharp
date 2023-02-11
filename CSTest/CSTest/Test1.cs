@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSTest
 {
-    internal class Exam1
+    internal class Test1
     {
         //Đây là bài về nhập xuất cơ bản
         public static void Run()

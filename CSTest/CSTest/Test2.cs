@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSTest
 {
-    internal class Exam2
+    internal class Test2
     {
         //Đây là bài về kiểu dữ liệu
         //Các chương trình bên dưới đều được copy trên web

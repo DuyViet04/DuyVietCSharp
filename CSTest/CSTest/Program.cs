@@ -11,9 +11,9 @@ namespace CSTest
             Console.WriteLine("Hello World!");
             Console.WriteLine("Code by DuyViet");
             Console.WriteLine("==================================================================");
-            //Exam1.Run();
+            //Test1.Run();
             Console.WriteLine("==================================================================");
-            Exam2.Run();
+            Test2.Run();
 
         }
     }
