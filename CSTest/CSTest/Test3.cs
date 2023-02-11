@@ -19,6 +19,7 @@ namespace CSTest
 
             Console.ReadKey();
             Console.WriteLine("");
+
             Console.WriteLine("***CHUONG TRINH 2***");
             int a, b, c;
 
@@ -31,6 +32,7 @@ namespace CSTest
 
             Console.ReadKey();
             Console.WriteLine("");
+
             Console.WriteLine("***CHUONG TRINH 3***");
             string strSoNguyen; // Biến chứa dữ liệu nhập vào từ bàn phím
             int SoNguyen; // Biến chứa số nhập vào từ bàn phím

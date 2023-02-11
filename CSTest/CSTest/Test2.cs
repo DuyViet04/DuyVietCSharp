@@ -31,6 +31,7 @@ namespace CSTest
 
             Console.ReadKey();//Dòng này để tạm dừng chương trình cho đến khi ấn 1 nút nào đó từ bàn phím
             Console.WriteLine("");
+            
             //Đây là chương trình về thao tác với biến
             Console.WriteLine("***CHUONG TRINH 2");
             // Kiểu số nguyên
