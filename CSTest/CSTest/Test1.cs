@@ -23,7 +23,7 @@ namespace CSTest
             Console.WriteLine("DuyViet xin chao " + name1);
             //Neu muon chay cai duoi nay thi bo comment
             //Console.WriteLine($"DuyViet xin chao {name1}");
-            Console.WriteLine("DuyViet xin chao {0}",name1);
+            //Console.WriteLine("DuyViet xin chao {0}",name1);
             Console.WriteLine("");
             Console.WriteLine("***CHUONG TRINH 2***");
             Console.Write("Nhap ten: ");
@@ -35,6 +35,7 @@ namespace CSTest
             Console.WriteLine(name2 + " " + age2 + " " + address2);
             //Neu muon chay cai duoi thi bo comment
             //Console.WriteLine($"{name2} {age2} {address2}");
+            //Console.WriteLine("{0}{1}{2}", name2, age2, address2);
         }
     }
 }
