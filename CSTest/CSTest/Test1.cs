@@ -11,7 +11,7 @@ namespace CSTest
         //Đây là bài về nhập xuất cơ bản
         public static void Run()
         {
-            //Mấy chương trinh này chưa bắt lỗi.
+            //Mấy chương trình này chưa bắt lỗi.
             //VD số tuổi có thể nhập bất kì cái gì mà không cần phải yêu cầu nhập đúng kiểu số
             string name1;
             string name2;
@@ -23,6 +23,7 @@ namespace CSTest
             Console.WriteLine("DuyViet xin chao " + name1);
             //Neu muon chay cai duoi nay thi bo comment
             //Console.WriteLine($"DuyViet xin chao {name1}");
+            Console.WriteLine("DuyViet xin chao {0}",name1);
             Console.WriteLine("");
             Console.WriteLine("***CHUONG TRINH 2***");
             Console.Write("Nhap ten: ");
