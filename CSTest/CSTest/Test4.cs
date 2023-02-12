@@ -59,6 +59,7 @@ namespace CSTest
             Console.WriteLine(" Result = " + Result); // Tương tự như trên
             Console.WriteLine("");
 
+            //Muốn chạy chương trình này thì bỏ comment
             //Console.WriteLine("***CHUONG TRINH 6***");
             //int A, B; // Biến chứa giá trị 2 số vừa nhập vào (kiểu số)
             //int Tong, Hieu, Tich; // Biến chứa kết quả tổng, hiệu, tích
