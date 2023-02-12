@@ -59,36 +59,83 @@ namespace CSTest
             Console.WriteLine(" Result = " + Result); // Tương tự như trên
             Console.WriteLine("");
 
-            Console.WriteLine("***CHUONG TRINH 6***");
-            int A, B; // Biến chứa giá trị 2 số vừa nhập vào (kiểu số)
-            int Tong, Hieu, Tich; // Biến chứa kết quả tổng, hiệu, tích
-            double Thuong; // Vì phép chia có thể cho ra số thập phân nên dùng biến kiểu double để chứa nó.
-            string strA, strB; // Biến chứa giá trị 2 số nhập vào từ bàn phím (kiểu chuỗi)
+            //Console.WriteLine("***CHUONG TRINH 6***");
+            //int A, B; // Biến chứa giá trị 2 số vừa nhập vào (kiểu số)
+            //int Tong, Hieu, Tich; // Biến chứa kết quả tổng, hiệu, tích
+            //double Thuong; // Vì phép chia có thể cho ra số thập phân nên dùng biến kiểu double để chứa nó.
+            //string strA, strB; // Biến chứa giá trị 2 số nhập vào từ bàn phím (kiểu chuỗi)
 
-            Console.WriteLine("         **************************************************");
-            Console.WriteLine("         *                                         			       *");
-            Console.WriteLine("         *   Chuong trinh tinh tong, hieu, tich, thuong  *");
-            Console.WriteLine("         *                                            		       *");
-            Console.WriteLine("         **************************************************");
+            //Console.WriteLine("         **************************************************");
+            //Console.WriteLine("         *                                         			       *");
+            //Console.WriteLine("         *   Chuong trinh tinh tong, hieu, tich, thuong  *");
+            //Console.WriteLine("         *                                            		       *");
+            //Console.WriteLine("         **************************************************");
 
-            Console.Write("\n Moi ban nhap so A: ");
-            strA = Console.ReadLine(); // Nhận giá trị nhập vào từ bàn phím cho số A
-            Console.Write(" Moi ban nhap so B: ");
-            strB = Console.ReadLine(); // Nhận giá trị nhập vào từ bàn phím cho số B
+            //Console.Write("\n Moi ban nhap so A: ");// "\n" dùng để xuống dòng
+            //strA = Console.ReadLine(); // Nhận giá trị nhập vào từ bàn phím cho số A
+            //Console.Write(" Moi ban nhap so B: ");
+            //strB = Console.ReadLine(); // Nhận giá trị nhập vào từ bàn phím cho số B
 
-            A = int.Parse(strA); // Ép kiểu giá trị nhập vào từ kiễu chuỗi sang kiểu số nguyên, sử dụng phương thức Parse()
-            B = int.Parse(strB); // Tương tự
+            //A = int.Parse(strA); // Ép kiểu giá trị nhập vào từ kiễu chuỗi sang kiểu số nguyên, sử dụng phương thức Parse()
+            //B = int.Parse(strB); // Tương tự
 
-            Tong = A + B;
-            Hieu = A - B;
-            Tich = A * B;
-            Thuong = (double)A / B; // Ép kiểu số A về số thập phân để phép chia cho ra số thập phân
+            //Tong = A + B;
+            //Hieu = A - B;
+            //Tich = A * B;
+            //Thuong = (double)A / B; // Ép kiểu số A về số thập phân để phép chia cho ra số thập phân
 
-            Console.WriteLine(" Tong = " + Tong);
-            Console.WriteLine(" Hieu = " + Hieu);
-            Console.WriteLine(" Tich = " + Tich);
-            Console.WriteLine(" Thuong = " + Thuong);
+            //Console.WriteLine(" Tong = " + Tong);
+            //Console.WriteLine(" Hieu = " + Hieu);
+            //Console.WriteLine(" Tich = " + Tich);
+            //Console.WriteLine(" Thuong = " + Thuong);
+            //Console.WriteLine("");
 
+            Console.WriteLine("***CHUONG TRINH 6 REMAKE***");
+            string strA, strB;
+            int A, B;
+            bool isTryParse1, isTryParse2;
+            Console.Write("Nhap so A: ");
+            strA = Console.ReadLine();
+            Console.Write("Nhap so B: ");
+            strB = Console.ReadLine();
+            isTryParse1 = Int32.TryParse(strA, out A);
+            isTryParse2 = Int32.TryParse(strB, out B);
+            if ((isTryParse1 == false) || (isTryParse2 == false))
+            {
+                Console.WriteLine("Du lieu ban nhap khong thoa man");
+                Console.WriteLine("Moi ban nhap lai");
+                NhapSo();
+            }
+            else
+            {
+                int tong = A + B;
+                int hieu = A - B;
+                long tich = A * B;
+                double thuong = (double)A / B;
+                Console.WriteLine("Tong = " + tong);
+                Console.WriteLine("Hieu = " + hieu);
+                Console.WriteLine("Tich = " + tich);
+                Console.WriteLine("Thuong = " + thuong);
+            }
+
+        }
+        public static void NhapSo()
+        {
+            string strA, strB;
+            int A, B;
+            bool isTryParse1, isTryParse2;
+            Console.Write("Nhap so A: ");
+            strA = Console.ReadLine();
+            Console.Write("Nhap so B: ");
+            strB = Console.ReadLine();
+            isTryParse1 = Int32.TryParse(strA, out A);
+            isTryParse2 = Int32.TryParse(strB, out B);
+            if ((isTryParse1 == false) || (isTryParse2 == false))
+            {
+                Console.WriteLine("Du lieu ban nhap khong thoa man");
+                Console.WriteLine("Moi ban nhap lai");
+                NhapSo();
+            }
         }
     }
 }
